@@ -8,12 +8,39 @@ import (
 	"math/rand"
 	"os"
 	"sort"
+	"strconv"
 	"strings"
 
 	"gonum.org/v1/gonum/mat"
 )
 
 const eosTok = "\n"
+
+// Sampling knobs, tunable via env (GEN_TEMP, GEN_TOPK). Lower temp = steadier/
+// more repetitive; higher = more varied/risky. (Avoid the name TEMP — it's a
+// reserved Windows env var for the temp directory.)
+var (
+	genTemp = envFloat("GEN_TEMP", 0.8)
+	genTopK = envInt("GEN_TOPK", 10)
+)
+
+func envFloat(k string, def float64) float64 {
+	if v := os.Getenv(k); v != "" {
+		if f, err := strconv.ParseFloat(v, 64); err == nil {
+			return f
+		}
+	}
+	return def
+}
+
+func envInt(k string, def int) int {
+	if v := os.Getenv(k); v != "" {
+		if n, err := strconv.Atoi(v); err == nil {
+			return n
+		}
+	}
+	return def
+}
 
 // ---------- Core ops ----------
 
@@ -403,7 +430,7 @@ func (m *Model) repl(rng *rand.Rand) {
 		if line == "" {
 			break
 		}
-		fmt.Printf("%q\n", m.generate(line, 200, 0.8, 10, rng))
+		fmt.Printf("%q\n", m.generate(line, 300, genTemp, genTopK, rng))
 		fmt.Print("> ")
 	}
 }
@@ -417,9 +444,9 @@ func main() {
 		len(m.Vocab), m.Cfg.DModel, m.Cfg.NLayers, m.Cfg.DFF)
 
 	rng := rand.New(rand.NewSource(1))
-	fmt.Println("\nGeneration (temp=0.8, top-k=10):")
-	for _, p := range []string{"the cat", "the dog ran", "the big"} {
-		fmt.Printf("%-14q → %q\n", p, m.generate(p, 100, 0.8, 10, rng))
+	fmt.Printf("\nGeneration (temp=%g, top-k=%d):\n", genTemp, genTopK)
+	for _, p := range []string{"once upon a time", "the little girl", "one day"} {
+		fmt.Printf("%-20q → %q\n", p, m.generate(p, 200, genTemp, genTopK, rng))
 	}
 
 	if len(os.Args) > 1 && os.Args[1] == "-i" {

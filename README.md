@@ -47,7 +47,11 @@ go run ./train
 | `CKPT_EVERY` | 200 | 체크포인트 주기 (JSON 저장 + 샘플 생성) |
 | `DATA` | tinystories_raw.txt | 학습 텍스트 |
 
-예: `STEPS=20000 D_MODEL=128 N_LAYERS=4 go run ./train`
+검증된 "큰" 설정 (~600k params, CPU 약 3시간, loss ~0.9까지 내려감):
+
+```bash
+D_MODEL=128 N_LAYERS=4 N_HEADS=8 D_FF=512 BATCH=24 STEPS=20000 LR=4e-4 go run ./train
+```
 
 학습 중 `CKPT_EVERY` 마다 JSON을 저장하므로, 학습 도중에도 아래 추론을 실행해
 중간 결과를 바로 확인할 수 있습니다.
@@ -61,3 +65,13 @@ go run . -i     # 대화형: 프롬프트를 입력하면 이어서 생성
 
 생성은 autoregressive (다음 글자 샘플링 → 이어붙이기 반복)이며,
 temperature + top-k 샘플링을 쓰고 EOS(`"\n"`)를 만나면 멈춥니다.
+샘플링은 환경변수로 조절합니다:
+
+| 변수 | 기본 | 설명 |
+|------|------|------|
+| `GEN_TEMP` | 0.8 | temperature. 낮을수록(예 0.5) 안정적·반복적, 높을수록 다양·위험 |
+| `GEN_TOPK` | 10 | top-k. 후보 글자 수 |
+
+예: `GEN_TEMP=0.5 GEN_TOPK=8 go run . -i`
+
+(주의: `TEMP`은 Windows 예약 환경변수라 쓰면 안 됨 → `GEN_TEMP` 사용)

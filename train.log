@@ -1,150 +1,130 @@
-Vocab (58 chars): "\n !\"',-./0123456789:;?abcdefghijklmnopqrstuvwxyzéñ–—‘’“”…🎓"
-3584 stories → 22980 windows. Config: d=64 heads=4 layers=3 d_ff=256 seq=128 batch=16 steps=20000 lr=0.0005
+Vocab (66 chars): "\n !\"$&'*+,-./0123456789:;?abcdefghijklmnopqrstuvwxyz¡«»áéñó–—‘’“”…"
+16749 stories → 115061 windows. Config: d=128 heads=8 layers=4 d_ff=512 seq=128 batch=24 steps=20000 lr=0.0004
 Parallel batch over 22 workers.
-  step     1/20000  loss=4.3250
-  step   200/20000  loss=2.3355
-  step   400/20000  loss=2.3010
-  [ckpt @ 500] "once upon a time the the the the the the the the the to the the the the the the the the the the the the the the the the the to the the t"
-  step   600/20000  loss=2.2270
-  step   800/20000  loss=2.0956
-  step  1000/20000  loss=1.9279
-  [ckpt @ 1000] "once upon a time a a the was to a the be was around the and to the and to the ar the was to the to the to the to the to the to the to th"
-  step  1200/20000  loss=1.8698
-  step  1400/20000  loss=1.7165
-  [ckpt @ 1500] "once upon a time the was the was a the was a the was the to the was to the the was to the so the wated to the becare to the was to the w"
-  step  1600/20000  loss=1.6018
-  step  1800/20000  loss=1.5644
-  step  2000/20000  loss=1.5153
-  [ckpt @ 2000] "once upon a time the was a big the said. \"i saw a big to he said, \"the said, \"the was so he said, \"i \"way, \"i said, \"i \"i said, \"i \"sa s"
-  step  2200/20000  loss=1.5126
-  step  2400/20000  loss=1.4772
-  [ckpt @ 2500] "once upon a time the was so the some and the said and said the some and the said something the started to the started to the started to "
-  step  2600/20000  loss=1.5119
-  step  2800/20000  loss=1.4530
-  step  3000/20000  loss=1.4801
-  [ckpt @ 3000] "once upon a time to the bear and said, \"it's was so said, \"you we something and said, \"i lily said, \"i litttle be said, \"i lily sour and"
-  step  3200/20000  loss=1.4499
-  step  3400/20000  loss=1.3740
-  [ckpt @ 3500] "once upon a time, there was a big and said and he was so happy the saw a big back and said and the saw a big and something to she his to"
-  step  3600/20000  loss=1.3549
-  step  3800/20000  loss=1.3481
-  step  4000/20000  loss=1.4417
-  [ckpt @ 4000] "once upon a time the bear and said, \"that's said, \"yes, said, \"yes, said and said, \"yes, said, \"you can and said, \"yes, said, \"i you do."
-  step  4200/20000  loss=1.3128
-  step  4400/20000  loss=1.4009
-  [ckpt @ 4500] "once upon a time the beautiful with her and said he was so happy and said her and said her and said the said the sad and said the show h"
-  step  4600/20000  loss=1.2815
-  step  4800/20000  loss=1.3628
-  step  5000/20000  loss=1.3934
-  [ckpt @ 5000] "once upon a time the boy with his and said the ball said the ball said the ball and said the ball and said, \"i was so happy to the sorry"
-  step  5200/20000  loss=1.2397
-  step  5400/20000  loss=1.2758
-  [ckpt @ 5500] "once upon a time to the world and said, \"i want to the be saw a big beautiful something and said, \"i want to to the stop and said, \"it's"
-  step  5600/20000  loss=1.3029
-  step  5800/20000  loss=1.2678
-  step  6000/20000  loss=1.3328
-  [ckpt @ 6000] "once upon a time, there was a big so his mom to the started to the started to the started to the started to the started to the started t"
-  step  6200/20000  loss=1.3662
-  step  6400/20000  loss=1.3331
-  [ckpt @ 6500] "once upon a time the beautiful and said, \"i want to the be and said the beautiful the bear was so happy to help the bear the diffferent "
-  step  6600/20000  loss=1.2599
-  step  6800/20000  loss=1.3964
-  step  7000/20000  loss=1.2845
-  [ckpt @ 7000] "once upon a time the bird and said, \"it's mom said. \"i want to the said. \"i want to the said. \"i want to the said. \"i want to the said. "
-  step  7200/20000  loss=1.1664
-  step  7400/20000  loss=1.1688
-  [ckpt @ 7500] "once upon a time the boy who happy to the store and the bear and said to the store and said, \"i want to the bear was so happy. the bear "
-  step  7600/20000  loss=1.2992
-  step  7800/20000  loss=1.3031
-  step  8000/20000  loss=1.2280
-  [ckpt @ 8000] "once upon a time, there was a little girl named lily. the little girl was so happy to her had and the play with her friends and said, \"i"
-  step  8200/20000  loss=1.3185
-  step  8400/20000  loss=1.1835
-  [ckpt @ 8500] "once upon a time, there was a big so he was so happy to the started to the started to the started to the started to she was a big and sh"
-  step  8600/20000  loss=1.1775
-  step  8800/20000  loss=1.3793
-  step  9000/20000  loss=1.2283
-  [ckpt @ 9000] "once upon a time, there was a big something the started to the started to the story and the story and the started to the story and said,"
-  step  9200/20000  loss=1.2617
-  step  9400/20000  loss=1.2444
-  [ckpt @ 9500] "once upon a time there was a big something and said, \"i was a big something to the store and said, \"i will have a big something to the s"
-  step  9600/20000  loss=1.1708
-  step  9800/20000  loss=1.1225
-  step 10000/20000  loss=1.1895
-  [ckpt @ 10000] "once upon a time, there was a big to the story and the box and said, \"thank you can to the story and said, \"that is the box and said, \"i"
-  step 10200/20000  loss=1.1515
-  step 10400/20000  loss=1.1664
-  [ckpt @ 10500] "once upon a time, there was a little girl named lily. she was so happy to help to the store and the back to the balloon and she was so h"
-  step 10600/20000  loss=1.2110
-  step 10800/20000  loss=1.2292
-  step 11000/20000  loss=1.2553
-  [ckpt @ 11000] "once upon a time to the park. the bird was so happy that he was so happy and said, \"i we can to the store. the bird was so happy the bea"
-  step 11200/20000  loss=1.1881
-  step 11400/20000  loss=1.1517
-  [ckpt @ 11500] "once upon a time there was a big bed and said the store and the box the box the box the beautiful and the bear to her toys. the little g"
-  step 11600/20000  loss=1.2274
-  step 11800/20000  loss=1.2527
-  step 12000/20000  loss=1.1714
-  [ckpt @ 12000] "once upon a time there was a big be careful and the beautiful the balloon and the bear and the bear and the beautiful something the bear"
-  step 12200/20000  loss=1.2091
-  step 12400/20000  loss=1.1848
-  [ckpt @ 12500] "once upon a time, there was a little girl named lily. she loved to play with her mom and said, \"i was a big something and said, \"i will "
-  step 12600/20000  loss=1.1912
-  step 12800/20000  loss=1.2004
-  step 13000/20000  loss=1.1732
-  [ckpt @ 13000] "once upon a time there was a big strong and the story and she was so happy to her mom and said, \"i want to the story and said, \"i will h"
-  step 13200/20000  loss=1.1484
-  step 13400/20000  loss=1.1711
-  [ckpt @ 13500] "once upon a time, there was a big became to the store. the bird was so happy and said the store. the bird was so happy and said, \"that's"
-  step 13600/20000  loss=1.1357
-  step 13800/20000  loss=1.1340
-  step 14000/20000  loss=1.1392
-  [ckpt @ 14000] "once upon a time there was a little girl who loved to the story and the big and said, \"it's the best and said, \"i have a so sad. the bir"
-  step 14200/20000  loss=1.1889
-  step 14400/20000  loss=1.2026
-  [ckpt @ 14500] "once upon a time to play with her friends. they were so happy to have a big bed and said, \"i we can to the park. they were so happy to h"
-  step 14600/20000  loss=1.1408
-  step 14800/20000  loss=1.1155
-  step 15000/20000  loss=1.1464
-  [ckpt @ 15000] "once upon a time, there was a little boy named timmy. she loved to play with her mom and said, \"thank you can and said, \"i can i want to"
-  step 15200/20000  loss=1.1455
-  step 15400/20000  loss=1.0675
-  [ckpt @ 15500] "once upon a time there was a big tree and the park. the bear was so happy to her friends. they were so happy to her mom and said, \"what "
-  step 15600/20000  loss=1.0440
-  step 15800/20000  loss=1.1322
-  step 16000/20000  loss=1.1486
-  [ckpt @ 16000] "once upon a time to the sun and saw a big tree and said, \"i want to the store. they said, \"i will some to the store and said, \"i want to"
-  step 16200/20000  loss=1.1937
-  step 16400/20000  loss=1.1148
-  [ckpt @ 16500] "once upon a time, there was a little girl named lily. she loved to play with his friends and saw a big tree and the started to see the b"
-  step 16600/20000  loss=1.1983
-  step 16800/20000  loss=1.1113
-  step 17000/20000  loss=1.1439
-  [ckpt @ 17000] "once upon a time, there was a big started to see the store. the bird was so happy that he was so happy that he was so happy and saw a bi"
-  step 17200/20000  loss=1.1336
-  step 17400/20000  loss=1.0818
-  [ckpt @ 17500] "once upon a time, there was a little boy who was so happy. the bird was so happy and started to share and said, \"i want to the store and"
-  step 17600/20000  loss=1.1760
-  step 17800/20000  loss=1.1217
-  step 18000/20000  loss=1.0550
-  [ckpt @ 18000] "once upon a time, there was a little girl named lily. she was so happy to him and said, \"thank you can and said, \"you we can she said, \""
-  step 18200/20000  loss=1.1795
-  step 18400/20000  loss=1.0586
-  [ckpt @ 18500] "once upon a time there was a big boat with her to the bird was so happy to her to the bird and said, \"thank you can and said, \"i will th"
-  step 18600/20000  loss=1.1194
-  step 18800/20000  loss=1.1255
-  step 19000/20000  loss=1.1625
-  [ckpt @ 19000] "once upon a time, there was a little girl named lily. she loved to play with her friends and saw a big balloon and said \"that is a big t"
-  step 19200/20000  loss=1.1629
-  step 19400/20000  loss=1.1214
-  [ckpt @ 19500] "once upon a time, there was a little boy named timmy. the boy was so happy and saw a big back to the store. the boy was so happy and saw"
-  step 19600/20000  loss=1.0984
-  step 19800/20000  loss=1.1373
-  step 20000/20000  loss=1.1545
-  [ckpt @ 20000] "once upon a time the backyard. the bird was so happy to help her friends and said, \"that is a big boat and said, \"yes, it's a big boat a"
+  step     1/20000  loss=4.6188
+  step   200/20000  loss=2.2756
+  step   400/20000  loss=2.1809
+  step   600/20000  loss=1.9923
+  step   800/20000  loss=1.7699
+  step  1000/20000  loss=1.5396
+  [ckpt @ 1000] "once upon a time, the was a so she sore and the was a sory. the she saw a she she sound and the she store the the sto the sto the the st"
+  step  1200/20000  loss=1.5360
+  step  1400/20000  loss=1.3745
+  step  1600/20000  loss=1.3844
+  step  1800/20000  loss=1.3030
+  step  2000/20000  loss=1.2998
+  [ckpt @ 2000] "once upon a time, there was a big name with the stone was and said, \"that is the big box the stop. the bird was so happy to the story an"
+  step  2200/20000  loss=1.1754
+  step  2400/20000  loss=1.2543
+  step  2600/20000  loss=1.2111
+  step  2800/20000  loss=1.1625
+  step  3000/20000  loss=1.2315
+  [ckpt @ 3000] "once upon a time, there was a little girl named lily. she was so happy to her friends and said, \"what is my said, \"yes, i want to to the"
+  step  3200/20000  loss=1.2191
+  step  3400/20000  loss=1.1481
+  step  3600/20000  loss=1.1515
+  step  3800/20000  loss=1.0765
+  step  4000/20000  loss=1.1771
+  [ckpt @ 4000] "once upon a time, there was a little girl named lily. she was so happy and said, \"i want to see the beach other and started to play with"
+  step  4200/20000  loss=1.1232
+  step  4400/20000  loss=1.1199
+  step  4600/20000  loss=1.0314
+  step  4800/20000  loss=1.0744
+  step  5000/20000  loss=1.0945
+  [ckpt @ 5000] "once upon a time, there was a little girl named lily. she was so happy and said \"i this bird and said, \"i want to take the bird and said"
+  step  5200/20000  loss=1.1604
+  step  5400/20000  loss=1.0830
+  step  5600/20000  loss=1.0738
+  step  5800/20000  loss=1.0390
+  step  6000/20000  loss=0.9011
+  [ckpt @ 6000] "once upon a time, there was a little girl named lily. she loved to play with his toys and saw the beautiful started to stay and saw the "
+  step  6200/20000  loss=1.0549
+  step  6400/20000  loss=1.0037
+  step  6600/20000  loss=1.0016
+  step  6800/20000  loss=1.0427
+  step  7000/20000  loss=1.0387
+  [ckpt @ 7000] "once upon a time, there was a little girl named lily. she loved to play with her toys and she wanted to see the best and said, \"thank yo"
+  step  7200/20000  loss=0.9818
+  step  7400/20000  loss=0.9882
+  step  7600/20000  loss=1.0277
+  step  7800/20000  loss=1.0425
+  step  8000/20000  loss=1.0161
+  [ckpt @ 8000] "once upon a time, there was a little girl named lily. she loved to play with his toys and saw the bear was so happy to her mom. one day,"
+  step  8200/20000  loss=1.0629
+  step  8400/20000  loss=0.9996
+  step  8600/20000  loss=1.0388
+  step  8800/20000  loss=1.0439
+  step  9000/20000  loss=0.9668
+  [ckpt @ 9000] "once upon a time there was a big box and the box and the bear was so happy. the boy was so happy and said, \"thank you, mom, mommy! you a"
+  step  9200/20000  loss=1.0280
+  step  9400/20000  loss=0.9529
+  step  9600/20000  loss=0.9672
+  step  9800/20000  loss=0.9540
+  step 10000/20000  loss=0.9385
+  [ckpt @ 10000] "once upon a time, there was a little girl named lily. she loved to play with her toys and she was so happy that her mom was so happy tha"
+  step 10200/20000  loss=0.9844
+  step 10400/20000  loss=1.0049
+  step 10600/20000  loss=0.9783
+  step 10800/20000  loss=0.9555
+  step 11000/20000  loss=0.9530
+  [ckpt @ 11000] "once upon a time, there was a little girl named lily. she loved to play with her friends and said, \"i will be friends and show you how t"
+  step 11200/20000  loss=0.9405
+  step 11400/20000  loss=0.9205
+  step 11600/20000  loss=0.9551
+  step 11800/20000  loss=0.9878
+  step 12000/20000  loss=0.9872
+  [ckpt @ 12000] "once upon a time, there was a little girl named lily. she loved to play with her mom and dad. one day, lily and her mom went to the park"
+  step 12200/20000  loss=0.9425
+  step 12400/20000  loss=0.9566
+  step 12600/20000  loss=0.8986
+  step 12800/20000  loss=1.0030
+  step 13000/20000  loss=0.9402
+  [ckpt @ 13000] "once upon a time, there was a little girl named lily. she loved to play with her toys and started to cry. one day, she saw a big box of "
+  step 13200/20000  loss=0.9300
+  step 13400/20000  loss=0.9933
+  step 13600/20000  loss=0.9892
+  step 13800/20000  loss=0.9852
+  step 14000/20000  loss=0.9222
+  [ckpt @ 14000] "once upon a time, there was a little girl named lily. she loved to play with her toys and she was so happy to have a lot of fun. she sai"
+  step 14200/20000  loss=0.9494
+  step 14400/20000  loss=0.9203
+  step 14600/20000  loss=0.9096
+  step 14800/20000  loss=0.9537
+  step 15000/20000  loss=0.9677
+  [ckpt @ 15000] "once upon a time, there was a little girl named lily. she loved to play with her toys and said, \"i want to see the big boat and said, \"i"
+  step 15200/20000  loss=0.9617
+  step 15400/20000  loss=1.0136
+  step 15600/20000  loss=0.8505
+  step 15800/20000  loss=0.9056
+  step 16000/20000  loss=0.9423
+  [ckpt @ 16000] "once upon a time, there was a little girl named lily. she loved to play with her dolls and she was so excited to see the birds and the b"
+  step 16200/20000  loss=0.9354
+  step 16400/20000  loss=0.9148
+  step 16600/20000  loss=0.9185
+  step 16800/20000  loss=0.9236
+  step 17000/20000  loss=0.9441
+  [ckpt @ 17000] "once upon a time, there was a little girl named lily. she loved to play with her toys and show the ball the stars the store and started "
+  step 17200/20000  loss=0.9333
+  step 17400/20000  loss=0.8785
+  step 17600/20000  loss=0.8291
+  step 17800/20000  loss=0.9845
+  step 18000/20000  loss=0.9000
+  [ckpt @ 18000] "once upon a time, there was a little girl named lily. she loved to play with her toys and she was so happy to have some food and she was"
+  step 18200/20000  loss=0.9144
+  step 18400/20000  loss=0.9598
+  step 18600/20000  loss=0.9279
+  step 18800/20000  loss=0.9127
+  step 19000/20000  loss=0.9146
+  [ckpt @ 19000] "once upon a time, there was a little girl named lily. she loved to play outside in the sun with her mom and dad. one day, lily was playi"
+  step 19200/20000  loss=0.9082
+  step 19400/20000  loss=0.8967
+  step 19600/20000  loss=0.9943
+  step 19800/20000  loss=0.8976
+  step 20000/20000  loss=0.9639
+  [ckpt @ 20000] "once upon a time, there was a little girl named lily. she loved to play with her toys and said, \"i want to play with her toys. i was so "
 
 Greedy generations (char-level):
-"once upon a time" → "once upon a time the backyard. the bird was so happy to help her friends and said, \"that is a big boat and said, \"yes, it's a big boat and said, \"you can it was a big"
-"the little" → "the little girl named lily. she loved to play with her toys and the bird was so excited that he was so happy to her to the store and said, \"that is and said, \"y"
-"one day" → "one day, the bear was a little girl named lily. she loved to play with her toys and said, \"that is a big bowl and said, \"yes, it's good and said, \"yes, it's "
+"once upon a time" → "once upon a time, there was a little girl named lily. she loved to play with her toys and said, \"i want to play with her toys. i was so happy to be careful with you.\""
+"the little" → "the little girl was so happy that he was so happy to have a special to see the bird and the birds were so happy. the bird was so happy to have a special time to"
+"one day" → "one day, the bird was so happy to have a big box of the store. the bird was so happy to have a special to see the bird and the birds were so happy. the bird "
 Wrote tiny_english_gpt.json
